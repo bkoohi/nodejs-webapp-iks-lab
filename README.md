@@ -131,4 +131,12 @@ If you wish to use the default Kubernetes namespace, run the below command to se
 export KUBERNETES_NAMESPACE=default
 ```
 
+6- Change to the chart directory under your starter application directory:
+```
+cd chart/kubernetesnodeapp
+```
 
+7- Install the Helm chart:
+```
+helm3 install $MYPROJECT --namespace $KUBERNETES_NAMESPACE . --set image.repository=icr.io/solution-tutorials/tutorial-scalable-webapp-kubernetes
+```
