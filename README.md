@@ -173,5 +173,5 @@ kubectl apply -f ingress-ibmdomain.yaml
 ```
 7.5 Open your application in a browser at https://<nameofproject>.<ingress-sub-domain>/ or run the below command to see the HTTP output
 ```
-    curl -I https://$MYPROJECT.$INGRESS_SUBDOMAIN
+curl -I https://$MYPROJECT.$INGRESS_SUBDOMAIN
 ```
