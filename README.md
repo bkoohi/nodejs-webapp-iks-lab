@@ -72,3 +72,7 @@ Scale Kubernetes pods.
 3- Optionally the image is pushed to a namespace in the IBM Cloud Container Registry.
 4- The application is deployed to a Kubernetes cluster.
 5- Users access the application.
+
+## 4- Start a new IBM Cloud Shell
+4.1 From the IBM Cloud console in your browser, select the account where you have been invited.
+4.2 Click the button in the upper right corner to create a new Cloud Shell.
