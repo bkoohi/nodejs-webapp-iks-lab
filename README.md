@@ -67,11 +67,11 @@ Scale Kubernetes pods.
 
 ![plot](https://github.com/bkoohi/webapp-iks-lab/blob/main/images/Screen%20Shot%202022-04-01%20at%2011.49.40%20AM.png)
 
-1- A developer downloads or clones a starter web application.
-2- Optionally build the application to produce a container image.
-3- Optionally the image is pushed to a namespace in the IBM Cloud Container Registry.
-4- The application is deployed to a Kubernetes cluster.
-5- Users access the application.
+3.1- A developer downloads or clones a starter web application.
+3.2- Optionally build the application to produce a container image.
+3.3- Optionally the image is pushed to a namespace in the IBM Cloud Container Registry.
+3.4- The application is deployed to a Kubernetes cluster.
+3.5- Users access the application.
 
 ## 4- Start a new IBM Cloud Shell
 4.1 From the IBM Cloud console in your browser, select the account where you have been invited.
