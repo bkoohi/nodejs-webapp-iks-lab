@@ -100,3 +100,35 @@ cd kubernetes-node-app
 ```
 This starter application code contains all the necessary configuration files for local development and deployment to Kubernetes.
 
+
+### 6- Deploy the application with Helm 3
+The container image for the application as already been built and pushed to a public Container Registry. In this section you will deploy the starter application using Helm. Helm helps you manage Kubernetes applications through Helm Charts, which helps define, install, and upgrade even the most complex Kubernetes application.
+
+1- Define an environment variable named MYPROJECT and set the name of the application by replacing the placeholder with your initials:
+```
+export MYPROJECT=<your-initials>kubenodeapp
+```
+2- Identify your cluster:
+```
+ibmcloud ks cluster ls
+```
+
+3- Initialize the variable with the cluster name
+
+```
+export MYCLUSTER=<CLUSTER_NAME>
+```
+
+4- Initialize the kubectl cli environment
+```
+ibmcloud ks cluster config --cluster $MYCLUSTER
+```
+
+5- You can either use the default Kubernetes namespace or create a new namespace for this application.
+
+If you wish to use the default Kubernetes namespace, run the below command to set an environment variable
+```
+export KUBERNETES_NAMESPACE=default
+```
+
+
