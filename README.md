@@ -60,4 +60,4 @@ First time users of ibm cloud need to create a new ibm cloud id. Consult with yo
 
 ## 3- Objectives
 
-![](https://github.com/joe-at-cp/checkpoint-iaas-gw-ibm-vpc/blob/master/CloudGuard_IaaS.jpg?v=4&s=100)
+![](./images/Screen Shot 2022-04-01 at 11.49.40 AM.pngv=4&s=100)
