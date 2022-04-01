@@ -83,3 +83,19 @@ Scale Kubernetes pods.
 
 4.2 Click the button in the upper right corner to create a new Cloud Shell ( https://cloud.ibm.com/shell )
 
+
+## 5- Clone a starter application
+
+In this section, you will clone a GitHub repo with a simple Helm-based NodeJS starter application with a landing page and two endpoints to get started. You can always extend the starter application based on your requirement.
+
+1- On a terminal, run the below command to clone the GitHub repository to your machine:
+
+```
+git clone https://github.com/IBM-Cloud/kubernetes-node-app
+```
+2- Change to the application directory,
+```
+cd kubernetes-node-app
+```
+This starter application code contains all the necessary configuration files for local development and deployment to Kubernetes.
+
