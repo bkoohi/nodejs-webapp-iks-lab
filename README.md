@@ -8,22 +8,19 @@ as Container Orchestration Platform, Container Registry, and cloud
 computing environment to kickstart cloud native applications. Specifically, 
 the attendees will learn how to: 
 
-Scaffold a starter web application, run it locally in a container, push the 
-scaffolded code to a private Git repository
+     Deploy a web application to the Kubernetes cluster.
+     Bind a custom subdomain.
+     Monitor the logs and health of the cluster.
+     Scale Kubernetes pods.
 
-Deploy the application to a Red Hat OpenShift cluster on IBM Cloud
 
-Monitor the health and performance of the application 
+    A developer downloads or clones a starter web application.
+    Optionally build the application to produce a container image.
+    Optionally the image is pushed to a namespace in the IBM Cloud Container Registry.
+    The application is deployed to a Kubernetes cluster.
+    Users access the application.
 
-Auto-scale and manually scale the application
-It is our goal that attendees will benefit from the workshop through the use of
-Red Hat OpenShift on IBM Cloud to enable them to:
-
-Build, deploy, manage, and sale applications faster and more cost-
-effectively
-
-Collaborate and accelerate their journey from proof of concept to 
-
+https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-scalable-webapp-kubernetes
 
 ## 2- Lab preparation
 Follow these instructions for the setup of the initial Lab environment.
