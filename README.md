@@ -140,3 +140,23 @@ cd chart/kubernetesnodeapp
 ```
 helm3 install $MYPROJECT --namespace $KUBERNETES_NAMESPACE . --set image.repository=icr.io/solution-tutorials/tutorial-scalable-webapp-kubernetes
 ```
+### 7- View the application
+8- List the Kubernetes services in the namespace:
+```
+kubectl get services -n $KUBERNETES_NAMESPACE
+```
+9- Locate the service kubernetesnodeapp linked to your application.
+
+10- Make note of the the public port the service is listening on. The port is a 5-digit number(e.g., 31569) under PORT(S).
+
+11- Identify a public IP of a worker node with the command below:
+```
+ibmcloud ks workers --cluster $MYCLUSTER
+```
+
+12- For VPC the IP addresses of the clusters are private to the VPC. These will not be accessable from your desktop but can be accessed by opening the Web Terminal from the Kubernetes cluster console UI. See Using the Kubernetes web terminal in your web browser
+
+13- Access the application at http://worker-ip-address:portnumber/:
+```
+curl http://<worker-ip-address>:<portnumber>
+```	
