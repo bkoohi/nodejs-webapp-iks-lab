@@ -60,4 +60,4 @@ First time users of ibm cloud need to create a new ibm cloud id. Consult with yo
 
 ## 3- Objectives
 
-![Alt text](relative/path/to/img.jpg?raw=true "Architecture)
+![test ]
