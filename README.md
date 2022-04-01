@@ -141,25 +141,37 @@ cd chart/kubernetesnodeapp
 helm3 install $MYPROJECT --namespace $KUBERNETES_NAMESPACE . --set image.repository=icr.io/solution-tutorials/tutorial-scalable-webapp-kubernetes
 ```
 ### 7-  Use the IBM-provided domain for your cluster
+Paid clusters come with an IBM-provided domain. This gives you a better option to expose applications with a proper URL and on standard HTTP/S ports.
+
+Use Ingress to set up the cluster inbound connection to the service.
+
 ![plot](https://cloud.ibm.com/docs-content/v1/content/d7719795b28ea8f7b7514e07e872e2cc3e8e9c6f/solution-tutorials/images/solution2/Ingress.png)
 
-### 7- View the application
-8- List the Kubernetes services in the namespace:
+7.1 Identify your IBM-provided Ingress domain
 ```
-kubectl get services -n $KUBERNETES_NAMESPACE
+ibmcloud ks cluster get --cluster $MYCLUSTER
 ```
-9- Locate the service kubernetesnodeapp linked to your application.
+to find
 
-10- Make note of the the public port the service is listening on. The port is a 5-digit number(e.g., 31569) under PORT(S).
+Ingress subdomain: mycluster.us-south.containers.appdomain.cloud
+Ingress secret:    mycluster
 
-11- Identify a public IP of a worker node with the command below:
+7.2 Define environment variables INGRESS_SUBDOMAIN and INGRESS_SECRET to hold the values
 ```
-ibmcloud ks workers --cluster $MYCLUSTER
+export INGRESS_SUBDOMAIN=<INGRESS_SUBDOMAIN_FROM_ABOVE_STEP>
+export INGRESS_SECRET=<INGRESS_SECRET>
 ```
+7.3 Change to your starter application directory and run the below bash command to create an Ingress file ingress-ibmdomain.yaml pointing to the IBM-provided domain with support for HTTP and HTTPS.
+```
+./ingress.sh ibmdomain_https
+```
+7.4 The file is generated from a template file ingress-ibmdomain-template.yaml under yaml-templates folder by replacing all the values wrapped in the placeholders ($) with the appropriate values from the environment variables.
 
-12- For VPC the IP addresses of the clusters are private to the VPC. These will not be accessable from your desktop but can be accessed by opening the Web Terminal from the Kubernetes cluster console UI. See Using the Kubernetes web terminal in your web browser
-
-13- Access the application at http://worker-ip-address:portnumber/:
+Deploy the Ingress
 ```
-curl http://<worker-ip-address>:<portnumber>
-```	
+kubectl apply -f ingress-ibmdomain.yaml
+```
+7.5 Open your application in a browser at https://<nameofproject>.<ingress-sub-domain>/ or run the below command to see the HTTP output
+```
+    curl -I https://$MYPROJECT.$INGRESS_SUBDOMAIN
+```
