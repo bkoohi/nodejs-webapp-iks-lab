@@ -1,4 +1,4 @@
-# 1- Hands-on lab Training webapp-iks-lab
+# 1- Hands-on lab training webapp-iks-lab
 
 Deploy a Scalable Web App on IKS cluster Workshop 
 
