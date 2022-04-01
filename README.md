@@ -140,6 +140,9 @@ cd chart/kubernetesnodeapp
 ```
 helm3 install $MYPROJECT --namespace $KUBERNETES_NAMESPACE . --set image.repository=icr.io/solution-tutorials/tutorial-scalable-webapp-kubernetes
 ```
+### 7-  Use the IBM-provided domain for your cluster
+![plot](https://cloud.ibm.com/docs-content/v1/content/d7719795b28ea8f7b7514e07e872e2cc3e8e9c6f/solution-tutorials/images/solution2/Ingress.png)
+
 ### 7- View the application
 8- List the Kubernetes services in the namespace:
 ```
