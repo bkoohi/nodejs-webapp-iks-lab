@@ -57,6 +57,7 @@ Users need to go to their notification section to accept the invite:
 https://cloud.ibm.com/notifications
 First time users of ibm cloud need to create a new ibm cloud id. Consult with your ibm contact for first time ID creation ( https://cloud.ibm.com/registration ) 
 
+4- Work with your IKS team to deploy an IKS cluster required for this lab.
 
 ## 3- Objectives
 
