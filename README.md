@@ -1,4 +1,4 @@
-# Hands-on lab Training webapp-iks-lab
+# 1- Hands-on lab Training webapp-iks-lab
 
 Deploy a Scalable Web App on IKS cluster Workshop 
 
@@ -25,7 +25,7 @@ effectively
 Collaborate and accelerate their journey from proof of concept to 
 
 
-## Lab preparation
+## 2- Lab preparation
 Follow these instructions for the setup of the initial Lab environment.
 
 1- Create an access group in your IBM Cloud account: "Demo LABs"
@@ -58,4 +58,6 @@ https://cloud.ibm.com/notifications
 First time users of ibm cloud need to create a new ibm cloud id. Consult with your ibm contact for first time ID creation ( https://cloud.ibm.com/registration ) 
 
 
+## 3- Objectives
 
+![Alt text](relative/path/to/img.jpg?raw=true "Architecture)
