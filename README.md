@@ -60,4 +60,4 @@ First time users of ibm cloud need to create a new ibm cloud id. Consult with yo
 
 ## 3- Objectives
 
-![plot](./images/Screen Shot 2022-04-01 at 11.49.40 AM.pngv=4&s=100)
+![plot](https://github.com/bkoohi/webapp-iks-lab/blob/main/images/Screen%20Shot%202022-04-01%20at%2011.49.40%20AM.png)
