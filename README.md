@@ -81,5 +81,5 @@ Scale Kubernetes pods.
 ## 4- Start a new IBM Cloud Shell
 4.1 From the IBM Cloud console in your browser, select the account where you have been invited.
 
-4.2 Click the button in the upper right corner to create a new Cloud Shell.
+4.2 Click the button in the upper right corner to create a new Cloud Shell ( https://cloud.ibm.com/shell )
 
