@@ -60,4 +60,15 @@ First time users of ibm cloud need to create a new ibm cloud id. Consult with yo
 
 ## 3- Objectives
 
+Deploy a web application to the Kubernetes cluster.
+Monitor the logs and health of the cluster.
+Scale Kubernetes pods.
+
+
 ![plot](https://github.com/bkoohi/webapp-iks-lab/blob/main/images/Screen%20Shot%202022-04-01%20at%2011.49.40%20AM.png)
+
+1-A developer downloads or clones a starter web application.
+2- Optionally build the application to produce a container image.
+3- Optionally the image is pushed to a namespace in the IBM Cloud Container Registry.
+4- The application is deployed to a Kubernetes cluster.
+5- Users access the application.
