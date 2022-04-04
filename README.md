@@ -162,6 +162,9 @@ export INGRESS_SECRET=<INGRESS_SECRET>
 ```
 7.3 Change to your starter application directory and run the below bash command to create an Ingress file ingress-ibmdomain.yaml pointing to the IBM-provided domain with support for HTTP and HTTPS.
 ```
+cd  ~/kubernetes-node-app
+```
+```
 ./ingress.sh ibmdomain_https
 ```
 7.4 The file is generated from a template file ingress-ibmdomain-template.yaml under yaml-templates folder by replacing all the values wrapped in the placeholders ($) with the appropriate values from the environment variables.
