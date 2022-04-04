@@ -13,7 +13,7 @@ the attendees will learn how to:
      Monitor the logs and health of the cluster.
      Scale Kubernetes pods.
 
-
+Tasks to complete:
     A developer downloads or clones a starter web application.
     Optionally build the application to produce a container image.
     Optionally the image is pushed to a namespace in the IBM Cloud Container Registry.
