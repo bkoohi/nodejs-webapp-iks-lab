@@ -179,47 +179,47 @@ curl -I https://$MYPROJECT.$INGRESS_SUBDOMAIN
 ```
 An exmaple output:
 	
-	```
-	HTTP/2 200
+```
+HTTP/2 200
 	
-	date: Mon, 04 Apr 2022 13:47:39 GMT
+date: Mon, 04 Apr 2022 13:47:39 GMT
 	
-	content-type: text/html; charset=UTF-8
+content-type: text/html; charset=UTF-8
 	
-	content-length: 58215
+content-length: 58215
 	
-	x-powered-by: Express
+x-powered-by: Express
 	
-	accept-ranges: bytes
+accept-ranges: bytes
 	
-	cache-control: public, max-age=0
+cache-control: public, max-age=0
 	
-	last-modified: Tue, 01 Feb 2022 15:43:18 GMT
+last-modified: Tue, 01 Feb 2022 15:43:18 GMT
 	
-	etag: W/"e367-17eb5f45df0"
+etag: W/"e367-17eb5f45df0"
 	
-	strict-transport-security: max-age=15724800; includeSubDomains
+strict-transport-security: max-age=15724800; includeSubDomains
 	
-	```
+```
 ### 8-  Clean up and remove application
 	
-	8.1 List application deployment
-	```
-	kubectl get deployments
-	```
+8.1 List application deployment
+```
+kubectl get deployments
+```
 	
-	8.2 Identify kubernetesnodeapp-deployment application in the list and delete
-	```
-	kubectl delete -n default deployment kubernetesnodeapp-deployment
-	```
+8.2 Identify kubernetesnodeapp-deployment application in the list and delete
+```
+kubectl delete -n default deployment kubernetesnodeapp-deployment
+```
 	
-	8.3 List installed ingress controller 
-	```
-	kubectl get ingress
-	```
+8.3 List installed ingress controller 
+```
+kubectl get ingress
+```
 	
-	8.4 Delete ngress-for-ibmdomain-http-and-https Ingress controller 
-	```
-	kubectl delete -n default ingress ingress-for-ibmdomain-http-and-https
-	```
+8.4 Delete ngress-for-ibmdomain-http-and-https Ingress controller 
+```
+kubectl delete -n default ingress ingress-for-ibmdomain-http-and-https
+```
 	
