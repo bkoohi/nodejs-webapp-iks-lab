@@ -156,6 +156,8 @@ Ingress secret:    mycluster
 7.2 Define environment variables INGRESS_SUBDOMAIN and INGRESS_SECRET to hold the values
 ```
 export INGRESS_SUBDOMAIN=<INGRESS_SUBDOMAIN_FROM_ABOVE_STEP>
+```
+```
 export INGRESS_SECRET=<INGRESS_SECRET>
 ```
 7.3 Change to your starter application directory and run the below bash command to create an Ingress file ingress-ibmdomain.yaml pointing to the IBM-provided domain with support for HTTP and HTTPS.
