@@ -14,11 +14,11 @@ the attendees will learn how to:
      Scale Kubernetes pods.
 
 Tasks to complete:
-    A developer downloads or clones a starter web application.
-    Optionally build the application to produce a container image.
-    Optionally the image is pushed to a namespace in the IBM Cloud Container Registry.
-    The application is deployed to a Kubernetes cluster.
-    Users access the application.
+  - [x] A developer downloads or clones a starter web application.
+  - [x] Optionally build the application to produce a container image.
+  - [x] Optionally the image is pushed to a namespace in the IBM Cloud Container Registry.
+  - [x] The application is deployed to a Kubernetes cluster.
+  - [x] Users access the application.
 
 https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-scalable-webapp-kubernetes
 
