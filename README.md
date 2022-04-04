@@ -177,3 +177,16 @@ kubectl apply -f ingress-ibmdomain.yaml
 ```
 curl -I https://$MYPROJECT.$INGRESS_SUBDOMAIN
 ```
+An exmaple output:
+	```
+	HTTP/2 200 
+	date: Mon, 04 Apr 2022 13:47:39 GMT
+	content-type: text/html; charset=UTF-8
+	content-length: 58215
+	x-powered-by: Express
+	accept-ranges: bytes
+	cache-control: public, max-age=0
+	last-modified: Tue, 01 Feb 2022 15:43:18 GMT
+	etag: W/"e367-17eb5f45df0"
+	strict-transport-security: max-age=15724800; includeSubDomains
+	```
