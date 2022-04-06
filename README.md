@@ -95,7 +95,7 @@ Install must-have tools to be productive with IBM Cloud:
     * jq - a lightweight and flexible command-line JSON processor.
     * Git - a free and open source distributed version control system.
 
-
+For tools installation, please follow instructions in this link: https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-tutorials
 
 
 ## 5- Clone a starter application
