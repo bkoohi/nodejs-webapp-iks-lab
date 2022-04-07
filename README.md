@@ -8,18 +8,10 @@ as Container Orchestration Platform, Container Registry, and cloud
 computing environment to kickstart cloud native applications. Specifically, 
 the attendees will learn how to: 
 
-     Deploy a web application to the Kubernetes cluster.
-     Bind a custom subdomain.
-     Monitor the logs and health of the cluster.
-     Scale Kubernetes pods.
+     Deploy a nodejs web application to the Kubernetes cluster.
+     Bind to default subdomain.
 
-Tasks to complete:
-  - [x] A developer downloads or clones a starter web application.
-  - [x] Optionally build the application to produce a container image.
-  - [x] Optionally the image is pushed to a namespace in the IBM Cloud Container Registry.
-  - [x] The application is deployed to a Kubernetes cluster.
-  - [x] Users access the application.
-
+Additional IBM Cloud solution tutotials can be access from this link:
 https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-scalable-webapp-kubernetes
 
 ## 2- Lab preparation
